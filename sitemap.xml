@@ -22,7 +22,9 @@
       {% else %}
         <priority>{{ post.sitemap.priority }}</priority>
       {% endif %}
-
+	  <loc>
+		http://destroyerjy.github.io/TestWeb/index.html
+	  </loc>
     </url>
   {% endfor %}
 </urlset>
