@@ -2,7 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>세종반재연.kr 우리동네 신입사원</title>
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<title>세종반재연.kr 우리동네 신입사원</title>
+	<meta name="title" content="세종반재연.kr 우리동네 신입사원" />
+	<meta name="subject" content="세종반재연.kr 더불어민주당 세종특별자치시의원 선거" />
+	<meta name="description" content="정치가 젊어진다. 동네가 달라진다." />
+	<meta name="keywords" content="반곡동,집현동" />
+	<meta name="author" content="DestroyerJY" />
+	
+	
     <style>
       html {
         font-family: sans-serif;
@@ -57,5 +67,16 @@
         <p>Youtube Link <a href="https://www.facebook.com/jaeyeon.ban/">Click</a>.</p>
       </section>
     </main>
+	<div class="counter"></div>
+    
+    <script>
+        let counter = document.querySelector('.counter');
+        let today = new Date(), //현재 날짜 가져오기
+            dday = new Date("Apr 15,2022, 00:00:00").getTime(), //디데이
+            gap = dday - today,
+            result = Math.floor(gap / (1000 * 60 * 60 * 24));
+        
+        counter.innerHTML = `D-${result}`
+    </script>
   </body>
 </html>
