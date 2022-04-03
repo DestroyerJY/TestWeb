@@ -44,6 +44,25 @@
 		max-height: 80%;
       }
 	  
+	  .lb-wrap {
+		width: 50%;
+		margin: 10px auto;
+		border: 1px solid #000000;
+		position: relative;
+	  }
+	  .lb-wrap img {
+		width: 100%;
+		vertical-align: middle;
+	  }
+	  .lb-text {
+		padding: 10px 20px;
+		background-color: #FFEEBC;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	  }
+	  
 	  .counter {
 		font-size: 3;
 		font-color: black;
@@ -55,15 +74,18 @@
 
     <main>
       <section>
-		<div class="counter"></div>
-		
-		<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
-			<img src="./profile_01.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
-		<a>
+		<div class="lb-wrap">
+			<div class="lb-text"></div>
+			<div class="lb-img">
+				<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
+					<img src="./profile_01.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
+				<a>
 
-		<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
-			<img src="./profile_02.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
-		<a>
+				<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
+					<img src="./profile_02.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
+				<a>
+			</div>
+		</div>
 
         <p>FaceBook Link <a href="https://www.facebook.com/jaeyeon.ban/">Click</a>.</p>
         <p>Youtube Link <a href="https://www.facebook.com/jaeyeon.ban/">Click</a>.</p>
@@ -72,7 +94,7 @@
 	
     
     <script>
-        let counter = document.querySelector('.counter');
+        let counter = document.querySelector('.lb-text');
         let today = new Date(), //현재 날짜 가져오기
             dday = new Date("Apr 15,2022, 00:00:00").getTime(), //디데이
             gap = dday - today,
