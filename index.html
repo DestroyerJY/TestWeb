@@ -29,41 +29,34 @@
       header {
       }
 
-      .section {
+      section {
         padding: 20px;
       }
 
-      .section img {
+      p {
+        line-height: 1.5;
+      }
+
+      img {
         display: block;
         margin: 0 auto;
         max-width: 100%;
 		max-height: 80%;
       }
 	  
-	  .section counter {
-		padding: 5px 10px;
-		text-color: white;
-		text-align: center;
+	  count {
+		font-size: 3;
+		font-color: black;
+		font-face: 돋움체;
 	  }
     </style>
   </head>
   <body>
 
     <main>
-		<div class="section counter"></div>
-		
-		<script>
-			let counter = document.querySelector('.counter');
-			let today = new Date(), //현재 날짜 가져오기
-				dday = new Date("Apr 15,2022, 00:00:00").getTime(), //디데이
-				gap = dday - today,
-				result = Math.floor(gap / (1000 * 60 * 60 * 24));
-			
-			counter.innerHTML = `D-${result}`
-		</script>
       <section>
-		<div class="section counter"></div>
-
+		<div class="counter"></div>
+		
 		<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
 			<img src="./profile_01.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
 		<a>
@@ -77,7 +70,7 @@
       </section>
     </main>
 	
-	<div class="counter"></div>
+    
     <script>
         let counter = document.querySelector('.counter');
         let today = new Date(), //현재 날짜 가져오기
