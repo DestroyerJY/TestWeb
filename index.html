@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lnag="ko">
-  <head>
+<head>
 	<meta name="naver-site-verification" content="b0a84c2e58619b89919f0b47c6af80118d7efb83" />
 	<meta charset="utf-8">
 	<meta http-equiv="imagetoolbar" content="no">
@@ -18,99 +18,81 @@
 	<meta name="author" content="DestroyerJY" />
 	
 	
-    <style>
-      html {
-        font-family: sans-serif;
-        background-color: gray;
-      }
+<style>
 
-      body {
-        margin: 0 auto;
-        background-color: white;
-      }
+body {
+	margin: 0 auto;
+	background-color: white;
+}
 
-      header {
-      }
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 80%;
+}
 
-      section {
-        padding: 20px;
-      }
+.lb-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
 
-      p {
-        line-height: 1.5;
-      }
+.lb-wrap img {
+	max-width: 700px;
+	width: 98%;
+	vertical-align: middle;
+}
 
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-		max-height: 80%;
-      }
-	  
-	  .lb-wrap {
-		display: flex;
-		margin: 10px auto;
-		position: relative;
-	  }
-	  
-	  .lb-wrap img {
-		width: 100%;
-		vertical-align: middle;
-	  }
-	  
-	  .lb-text {
-		padding: 10px 20px;
-		text-align: center;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-	  }
-	  
-    </style>
-  </head>
-  <body>
+.lb-text {
+	padding: 10px 20px;
+	text-align: center;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+  
+</style>
+</head>
+<body>
+	<div class="lb-wrap">
+		<div class="lb-text" style="font: italic bold 1.5em/1em Georgia; color: blue;"></div>
+		<div class="lb-img">
+			<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
+				<img src="./images/profile_01.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
+			<a>
 
-    <main>
-      <!--<section>-->
-		<div class="lb-wrap">
-			<div class="lb-text" style="font: italic bold 1.5em/1em Georgia; color: blue;"></div>
-			<div class="lb-img">
-				<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
-					<img src="./images/profile_01.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
-				<a>
-
-				<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
-					<img src="./images/profile_02.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
-				<a>
-			</div>
+			<a href="https://www.facebook.com/jaeyeon.ban" height="5" width="10" target="_blank">
+				<img src="./images/profile_02.jpg" alt="이미지를 클릭하시면 연결 됩니다.">
+			<a>
 		</div>
+	</div>
 
-		<!--<table>
-		  <tr>
-			<td>
-				<a href="https://www.facebook.com/jaeyeon.ban" height="5%" width="50%" target="_blank">
-					<img src="./images/logo_youtube.png" alt="이미지를 클릭하시면 연결 됩니다.">
-				<a>
-			</td>
-			<td>
-				<a href="https://www.facebook.com/jaeyeon.ban" height="5%" width="50%" target="_blank">
-					<img src="./images/logo_facebook.png" alt="이미지를 클릭하시면 연결 됩니다.">
-				<a>
-			</td>
-		  <tr>
-		</table>-->
-      <!--</section>-->
-    </main>
-	
-    
-    <script>
-        let counter = document.querySelector('.lb-text');
-        let today = new Date(), //현재 날짜 가져오기
-            dday = new Date("Jun 2,2022, 00:00:00").getTime(), //디데이 + 1일로 설정해줘야 함
-            gap = dday - today,
-            result = Math.floor(gap / (1000 * 60 * 60 * 24));
-        
-        counter.innerHTML = `D-${result}`
-    </script>
-  </body>
+	<!--<table>
+	  <tr>
+		<td>
+			<a href="https://www.facebook.com/jaeyeon.ban" height="5%" width="50%" target="_blank">
+				<img src="./images/logo_youtube.png" alt="이미지를 클릭하시면 연결 됩니다.">
+			<a>
+		</td>
+		<td>
+			<a href="https://www.facebook.com/jaeyeon.ban" height="5%" width="50%" target="_blank">
+				<img src="./images/logo_facebook.png" alt="이미지를 클릭하시면 연결 됩니다.">
+			<a>
+		</td>
+	  <tr>
+	</table>-->
+
+
+	<script>
+		let counter = document.querySelector('.lb-text');
+		let today = new Date(), //현재 날짜 가져오기
+			dday = new Date("Jun 2,2022, 00:00:00").getTime(), //디데이 + 1일로 설정해줘야 함
+			gap = dday - today,
+			result = Math.floor(gap / (1000 * 60 * 60 * 24));
+		
+		counter.innerHTML = `D-${result}`
+	</script>
+</body>
 </html>
